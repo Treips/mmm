@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+    <style media="screen">
+
+body{
+  background: linear-gradient(45deg, #200122, #6f0000);
+  animation: gradient 3s linear infinite;
+  background-size: 200% 200%;
+  font-family: 'Roboto';
+}
+
+
+
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 70% 50%;
+  }
+}
+
+      .лого {
+        position: absolute;
+        width: 268px;
+        height: 160px;
+        left: 300px;
+        right: 30px;
+        top: 70px;
+      }
+
+.глаза {
+  position: absolute;
+  width: 93px;
+  height: 93px;
+  left: 255px;
+  top: 302px;
+  cursor: pointer;
+
+}
+
+.губы {
+  position: absolute;
+  width: 93px;
+  height: 93px;
+  left: 255px;
+  top: 412px;
+  cursor: pointer;
+}
+
+.брови {
+  position: absolute;
+  width: 93px;
+  height: 93px;
+  left: 255px;
+  top: 517px;
+  cursor: pointer;
+}
+
+
+
+.eyer {
+position: absolute;
+width: 80px;
+height: 80px;
+left: 170px;
+top: 312px;
+background: url('images/iconeye1.png');
+background-repeat: no-repeat;
+background-position: center;
+transition: all .5s;
+cursor: pointer;
+
+}
+
+.eyeb {
+position: absolute;
+width: 80px;
+height: 80px;
+left: 272px;
+top: 312px;
+background: url('images/iconeye.png');
+background-position: center;
+background-repeat: no-repeat;
+transition: all .5s;
+cursor: pointer;
+}
+
+.eyew {
+position: absolute;
+width: 80px;
+height: 80px;
+left: 374px;
+top: 312px;
+background: url('images/glaza80.png');
+background-position: center;
+background-repeat: no-repeat;
+cursor: pointer;
+
+}
+
+.eyeg {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 476px;
+  top: 312px;
+  background: url('images/80ey.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.lipsr {
+position: absolute;
+width: 80px;
+height: 80px;
+left: 170px;
+top: 419px;
+background: url('images/iconmouth.png');
+background-position: center;
+background-repeat: no-repeat;
+cursor: pointer;
+}
+
+.lipsb {
+position: absolute;
+width: 80px;
+height: 80px;
+left: 272px;
+top: 419px;
+background: url('images/icomouth.png');
+background-repeat: no-repeat;
+background-position: center;
+cursor: pointer;
+}
+
+.lipsw {
+position: absolute;
+width: 80px;
+height: 80px;
+left: 374px;
+top: 419px;
+background: url('images/mouse.png');
+background-position: center;
+background-repeat: no-repeat;
+cursor: pointer;
+
+
+}
+
+.lipsg {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 476px;
+  top: 419px;
+  background: url('images/80mo.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.browr {
+position: absolute;
+width: 80px;
+height: 80px;
+left: 170px;
+top: 525px;
+background: url('images/iconbrow1.png');
+background-position: center;
+background-repeat: no-repeat;
+cursor: pointer;
+}
+
+.browb {
+position: absolute;
+width: 80px;
+height: 80px;
+left: 272px;
+top: 525px;
+background: url(icobrows.png);
+background-position: center;
+background-repeat: no-repeat;
+cursor: pointer;
+}
+
+.broww {
+position: absolute;
+width: 80px;
+height: 80px;
+left: 374px;
+top: 525px;
+background: url('images/d.png');
+background-position: center;
+background-repeat: no-repeat;
+cursor: pointer;
+}
+
+.browg {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 476px;
+  top: 525px;
+  background: url('images/80bro.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+
+
+.бровир {
+position: absolute;
+width: 340px;
+height: 42px;
+left: 825px;
+top: 278px;
+}
+
+.глазар {
+position: absolute;
+width: 273px;
+height: 121px;
+left: 862px;
+top: 321px;
+}
+
+
+
+
+.губыр {
+position: absolute;
+width: 202px;
+height: 116px;
+left: 893px;
+top: 475px;
+}
+
+
+
+
+
+
+
+.глазач {
+  position: absolute;
+  width: 273px;
+  height: 121px;
+  left: 866px;
+  top: 305px;
+  z-index: 100;
+}
+
+.губыч {
+  position: absolute;
+  width: 155px;
+  height: 100px;
+  left: 920px;
+  top: 513px;
+}
+
+.брович {
+  position: absolute;
+  width: 363px;
+  height: 75px;
+  left: 825px;
+  top: 260px;
+}
+
+
+
+
+
+
+
+
+.глазаб {
+  position: absolute;
+  width: 260px;
+  height: 120px;
+  top: 330px;
+  left: 870px;
+}
+
+.губыб {
+  position: absolute;
+  width: 250px;
+  height: 180px;
+  top: 485px;
+  left: 865px;
+}
+
+.бровиб {
+position: absolute;
+width: 325px;
+height: 64px;
+top: 250px;
+left: 835px;
+}
+
+
+
+
+.smile {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  left: 755px;
+  top: 200px;
+  z-index: -30;
+}
+
+.глазаз {
+  position: absolute;
+  width: 254px;
+  height: 104px;
+  top: 333px;
+  left: 874px;
+}
+
+.губыз {
+  position: absolute;
+  width: 140px;
+  height: 89px;
+  top: 500px;
+  left: 923px;
+}
+
+.бровиз {
+position: absolute;
+width: 244px;
+height: 56px;
+top: 242px;
+left: 867px;
+}
+
+h1 {
+  position: absolute;
+  left: 100px;
+  top: 50px;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 80px;
+  text-align: left;
+  color: #FFFFFF;
+  font-family: 'Dela Gothic One',;
+}
+
+a:hover{
+  opacity: 0.5;
+  transition: 0.7s linear;
+}
+
+
+.tap {
+  display: none;
+  transition: all 3s;
+}
+
+.border {
+  border-radius: 80px;
+  transition: all 0,01s;
+}
+
+    </style>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".глаза").click(function(){
+      $(".глаза").animate({left: "55px"}, 500 )
+        $(".eyer").fadeTo("opacity",.999);
+        $(".eyeb").fadeTo("opacity",.999);
+        $(".eyew").fadeTo("opacity",.999);
+        $(".eyeg").fadeTo("opacity",.999);
+      });
+    });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".губы").click(function(){
+      $(".губы").animate({left: "55px"}, 500 )
+        $(".lipsr").fadeTo("opacity",.999);
+        $(".lipsb").fadeTo("opacity",.999);
+        $(".lipsw").fadeTo("opacity",.999);
+        $(".lipsg").fadeTo("opacity",.999);
+      });
+    });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".брови").click(function(){
+      $(".брови").animate({left: "55px"}, 500 )
+        $(".browr").fadeTo("opacity",.999);
+        $(".browb").fadeTo("opacity",.999);
+        $(".broww").fadeTo("opacity",.999);
+        $(".browg").fadeTo("opacity",.999);
+      });
+    });
+    </script>
+
+
+
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".eyer").click(function(){
+      $(".глазар").show();
+      $(".глазач").hide();
+      $(".глазаб").hide();
+      $(".глазаз").hide();
+    });
+    });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".eyeb").click(function(){
+      $(".глазач").removeClass("tap");
+      $(".глазар").hide();
+      $(".глазаб").hide();
+      $(".глазаз").hide();
+    });
+    });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".eyew").click(function(){
+      $(".глазаб").show();
+      $(".глазар").hide();
+      $(".глазач").hide();
+      $(".глазаз").hide();
+    });
+    });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".eyeg").click(function(){
+      $(".глазаз").show();
+      $(".глазар").hide();
+      $(".глазаб").hide();
+      $(".глазач").hide();
+    });
+    });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".lipsr").click(function(){
+      $(".губыр").show();
+      $(".губыч").hide();
+      $(".губыб").hide();
+      $(".губыз").hide();
+    });
+    });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".lipsb").click(function(){
+      $(".губыч").show();
+      $(".губыр").hide();
+      $(".губыб").hide();
+      $(".губыз").hide();
+    });
+    });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".lipsw").click(function(){
+      $(".губыб").show();
+      $(".губыр").hide();
+      $(".губыч").hide();
+      $(".губыз").hide();
+    });
+    });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".lipsg").click(function(){
+      $(".губыз").show();
+      $(".губыр").hide();
+      $(".губыб").hide();
+      $(".губыч").hide();
+    });
+    });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".browr").click(function(){
+      $(".бровир").show();
+      $(".брович").hide();
+      $(".бровиб").hide();
+      $(".бровиз").hide();
+    });
+    });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".browb").click(function(){
+      $(".брович").show();
+      $(".бровир").hide();
+      $(".бровиб").hide();
+      $(".бровиз").hide();
+    });
+    });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".broww").click(function(){
+      $(".бровиб").show();
+      $(".бровир").hide();
+      $(".брович").hide();
+      $(".бровиз").hide();
+    });
+    });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".browg").click(function(){
+      $(".бровиз").show();
+      $(".бровир").hide();
+      $(".бровиб").hide();
+      $(".брович").hide();
+    });
+  });hair
+    </script>
+    <script type="text/javascript">
+     $(document).ready(function(){
+      $(".sss").click(function(){
+      $(this).addClass(".fon")
+      });
+      });
+    </script>
+    <head>
+      <body>
+ <a href="#"><h1>МАГАЗИН ЭМОЦИЙ</h1></a>
+<img class="брови" src="images/brows.svg" alt="брови">
+
+<img class="глаза" src="images/eyes.svg" alt="глаза">
+<img class="губы" src="images/mouth.svg" alt="губы">
+
+
+<div class="eyer tap"></div>
+<div class="eyeb tap"></div>
+<div class="eyew tap"></div>
+<div class="eyeg tap"></div>
+
+<div class="lipsr tap"></div>
+<div class="lipsb tap"></div>
+<div class="lipsw tap"></div>
+<div class="lipsg tap"></div>
+
+<div class="browr tap"></div>
+<div class="browb tap"></div>
+<div class="broww tap"></div>
+<div class="browg tap"></div>
+
+<div class="smile"></div>
+<div class="smile"></div>
+<div class="smile"></div>
+<div class="smile"></div>
+
+
+
+</div>
+
+
+
+
+
+
+
+<img class="бровир" src="images/брови.png" alt="бровир">
+<img class="глазар" src="images/glaza.png" alt="глазар">
+<img class="губыр" src="images/mouuth.png" alt="губыр">
+<img class="smile" src="images/smile.png" alt="head">
+
+
+
+<img class="брович tap" src="images/brow2.png" alt="брович">
+<img class="глазач tap" src="images/glaza2.png" alt="глазач">
+<img class="губыч tap" src="images/mouth2.png" alt="губыч">
+
+
+
+<img class="бровиб tap" src="images/eyebrow.png" alt="бровиб">
+<img class="глазаб tap" src="images/eye22.png" alt="глазаб">
+<img class="губыб tap" src="images/moouthicon.png" alt="губыб">
+
+
+
+
+<img class="бровиз tap" src="images/brow33.png" alt="бровиз">
+<img class="глазаз tap" src="images/eyered.png" alt="глазаз">
+<img class="губыз tap" src="images/grust.png" alt="губыз">
+
+
+
+
+
+
+  </body>
+</html>
